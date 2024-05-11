@@ -2,7 +2,7 @@ lib.locale()
 
 Config = {}
 Config.Debug = false
-Config.Target = 'qb'               -- only supporting ox_target and qb-target | nil to disable targeting
+Config.Target = 'qb-target'              -- only supporting ox_target and qb-target | nil to disable targeting
 Config.SpawnDelay = 5             -- seconds [how much time it should take between spawning animals]
 Config.DeleteEntityRadius = 300.0 -- will delete animal if your 400 meters away from them
 
