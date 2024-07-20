@@ -2,8 +2,13 @@ lib.locale()
 
 Config = {}
 Config.Debug = false
+<<<<<<< HEAD
 Config.Target = 'ox_target'       -- only supporting ox_target and qb-target | nil to disable targeting
 Config.SpawnDelay = 1             -- seconds [how much time it should take between spawning animals]
+=======
+Config.Target = 'qb-target'              -- only supporting ox_target and qb-target | nil to disable targeting
+Config.SpawnDelay = 5             -- seconds [how much time it should take between spawning animals]
+>>>>>>> 47672c0f37fa2b2fa3e500b5cd0ced8a2de2c8e4
 Config.DeleteEntityRadius = 300.0 -- will delete animal if your 400 meters away from them
 
 Config.TrackerItem = "animal_tracker"
@@ -41,9 +46,9 @@ Config.Campfire = {
     campfireItem = "campfire",
     items = {
         {
-            label = "Cooked meat",
+            label = "Cooked Meat",
             give = "cooked_meat",
-            cookTime = 5, -- seconds
+            cookTime = 10, -- seconds
             require = {
                 {
                     label = "Raw Meat",
@@ -79,7 +84,11 @@ Config.Campfire = {
 Config.HuntingZones = {
     ["CHILIAD_MOUNTAINS"] = {
         coords = vec3(1125.88, 4622.2, 80.08),
+<<<<<<< HEAD
         radius = 350.0,
+=======
+        radius = 200.0,
+>>>>>>> 47672c0f37fa2b2fa3e500b5cd0ced8a2de2c8e4
         maxSpawns = 5,                                         -- max animals spawned at one time
         allowedWeapons = { "WEAPON_MUSKET", "WEAPON_DAGGER" }, -- nil if you want to allow every weapon
         zone_radius = {
@@ -407,7 +416,7 @@ Config.HuntingZones = {
 --                      |_|
 
 Config.Shops = {
-    ["HuntGear Store"] = {
+    ["Hunting Store"] = {
         coords = vector4(967.6, -2121.12, 30.48, 86.84),
         ped = {
             enable = Config.Target and true or true, -- false the last bool to dont use ped
