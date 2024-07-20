@@ -2,7 +2,7 @@ lib.locale()
 
 Config = {}
 Config.Debug = false
-Config.Target = nil               -- only supporting ox_target and qb-target | nil to disable targeting
+Config.Target = 'ox_target'       -- only supporting ox_target and qb-target | nil to disable targeting
 Config.SpawnDelay = 1             -- seconds [how much time it should take between spawning animals]
 Config.DeleteEntityRadius = 300.0 -- will delete animal if your 400 meters away from them
 
@@ -15,7 +15,7 @@ Config.AimBlock = {
     enable = true,
     global = true,     -- false if you want to have aimblock only in hunting zones
     weaponsToBlock = { -- weapons that are disabled to shoot at players
-        `WEAPON_HEAVYSNIPER_MK2`,
+        `WEAPON_MUSKET`,
         -- `WEAPON_HEAVYSNIPER`,
     }
 }
@@ -79,13 +79,13 @@ Config.Campfire = {
 Config.HuntingZones = {
     ["CHILIAD_MOUNTAINS"] = {
         coords = vec3(1125.88, 4622.2, 80.08),
-        radius = 200.0,
-        maxSpawns = 5,                                                  -- max animals spawned at one time
-        allowedWeapons = { "WEAPON_HEAVYSNIPER_MK2", "WEAPON_DAGGER" }, -- nil if you want to allow every weapon
+        radius = 350.0,
+        maxSpawns = 5,                                         -- max animals spawned at one time
+        allowedWeapons = { "WEAPON_MUSKET", "WEAPON_DAGGER" }, -- nil if you want to allow every weapon
         zone_radius = {
             enable = true,
             color = 1,
-            opacity = 128,
+            opacity = 125,
         },
         blip = {
             enable = true,
